@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ALMOST DONE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h3> Confirm Details: </h3>
+    <br><br>
+    <h6>Name: {{name}}</h6>
+    <br>
+    <h6>Birthday: {{bdayMonth}} {{bdayDate}}</h6>
+    <br>
+    <h6>Cake: {{cakeType}} with {{frosting}} frosting</h6>
+    <br>
+    <br>
+    <br>
+    <ion-button shape="round"
+    color="primary"
+    fill="outline"
+    (click)="goToCake()"> BACK </ion-button>
+
+    <ion-button shape="round"
+      (click)="goToHome()">
+      FINISH
+    </ion-button>
+
+
+</ion-content>

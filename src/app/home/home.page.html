@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Birthday Town
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Hi, {{name}}</h3>
+  <br>
+  <br>
+  <h6>Today is not your birthday.</h6>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-button shape="round"
+  color="primary"
+  fill="outline"
+  (click)="goToConfirm()"> RESET PROFILE
+</ion-button>
+
+  <ion-button shape="round"
+    (click)="goToAbout()">
+    EDIT PROFILE
+  </ion-button>
+</ion-content>

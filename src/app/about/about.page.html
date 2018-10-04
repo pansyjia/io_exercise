@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ABOUT ME</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+      <ion-item>
+      <ion-label> Name:</ion-label>
+      <ion-input type="text" [(ngModel)]="name"></ion-input>
+      </ion-item>
+
+      <br>
+      <br>
+
+      <ion-item>
+        <ion-label>Birthday:</ion-label>
+
+        <ion-item>
+        <ion-label>Month</ion-label>
+        <ion-select [(ngModel)]="bdayMonth" interface="popover">
+          <ion-select-option value="January">January</ion-select-option>
+          <ion-select-option value="February">February</ion-select-option>
+          <ion-select-option value="March">March</ion-select-option>
+          <ion-select-option value="April">April</ion-select-option>
+          <ion-select-option value="May">May</ion-select-option>
+          <ion-select-option value="June">June</ion-select-option>
+          <ion-select-option value="July">July</ion-select-option>
+          <ion-select-option value="August">August</ion-select-option>
+          <ion-select-option value="September">September</ion-select-option>
+          <ion-select-option value="October">October</ion-select-option>
+          <ion-select-option value="November">November</ion-select-option>
+          <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+    </ion-item>
+          <!-- <ion-datetime display-format="MMMM DD" [(ngModel)]="bday"></ion-datetime> -->
+        <!-- <ion-input type="date" [(ngModel)]="bday"></ion-input> -->
+
+        <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-select [(ngModel)]="bdayDate" interface="popover">
+          <ion-select-option value="01">01</ion-select-option>
+          <ion-select-option value="02">02</ion-select-option>
+          <ion-select-option value="03">03</ion-select-option>
+          <ion-select-option value="04">04</ion-select-option>
+          <ion-select-option value="05">05</ion-select-option>
+          <ion-select-option value="06">06</ion-select-option>
+          <ion-select-option value="07">07</ion-select-option>
+          <ion-select-option value="08">08</ion-select-option>
+          <ion-select-option value="09">09</ion-select-option>
+          <ion-select-option value="10">10</ion-select-option>
+          <ion-select-option value="11">11</ion-select-option>
+          <ion-select-option value="12">12</ion-select-option>
+          <ion-select-option value="13">13</ion-select-option>
+          <ion-select-option value="14">14</ion-select-option>
+          <ion-select-option value="15">15</ion-select-option>
+          <ion-select-option value="16">16</ion-select-option>
+          <ion-select-option value="17">17</ion-select-option>
+          <ion-select-option value="18">18</ion-select-option>
+          <ion-select-option value="19">19</ion-select-option>
+          <ion-select-option value="20">20</ion-select-option>
+          <ion-select-option value="21">21</ion-select-option>
+          <ion-select-option value="22">22</ion-select-option>
+          <ion-select-option value="23">23</ion-select-option>
+          <ion-select-option value="24">24</ion-select-option>
+          <ion-select-option value="25">25</ion-select-option>
+          <ion-select-option value="26">26</ion-select-option>
+          <ion-select-option value="27">27</ion-select-option>
+          <ion-select-option value="28">28</ion-select-option>
+          <ion-select-option value="29">29</ion-select-option>
+          <ion-select-option value="30">30</ion-select-option>
+          <ion-select-option value="31">31</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-item>
+      
+  </ion-list>
+  <br>
+  <br>
+
+  <ion-button shape="round"
+    color="primary"
+    fill="outline"
+    (click)="goToWelcome()"> PREVIOUS 
+  </ion-button>
+
+    <ion-button shape="round"
+      (click)="goToCake()" (click)="saveData()">
+      NEXT
+    </ion-button>
+
+
+</ion-content>

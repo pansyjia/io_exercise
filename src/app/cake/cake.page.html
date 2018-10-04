@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>MY CAKE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label> Type: </ion-label>
+      <ion-select [(ngModel)]="cakeType">
+          <ion-select-option value="Vanilla">Vanilla</ion-select-option>
+          <ion-select-option value="Chocolate">Chocolate</ion-select-option>
+          <ion-select-option value="Red Velvet">Red Velvet</ion-select-option>
+          <ion-select-option value="Cheesecake">Cheesecake</ion-select-option>
+          <ion-select-option value="Cupcakes">Cupcakes</ion-select-option>
+          <ion-select-option value="Charlotte">Charlotte</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <br>
+    <br>
+
+    <ion-item>
+      <ion-label>Frosting:</ion-label>
+      <ion-select [(ngModel)]="frosting" interface="popover">
+          <ion-select-option value="Buttercream">Buttercream</ion-select-option>
+          <ion-select-option value="Cream Cheese">Cream Cheese</ion-select-option>
+          <ion-select-option value="Whipped Cream">Whipped Cream</ion-select-option>
+          <ion-select-option value="Ganache">Ganache</ion-select-option> 
+      </ion-select>
+    </ion-item>
+
+    <br>
+    <br>
+
+    <ion-item>
+      <ion-label>Gluten-free </ion-label>
+      <ion-toggle color="danger"></ion-toggle>
+    </ion-item>
+
+  </ion-list>
+
+  <br>
+  <br>
+   
+
+  <ion-button shape="round"
+    color="primary"
+    fill="outline"
+    (click)="goToAbout()"> PREVIOUS
+  </ion-button>
+
+  <ion-button shape="round" (click)="goToConfirm()">
+      NEXT
+  </ion-button>
+
+</ion-content>
